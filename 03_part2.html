@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<title>Assignment 3 Part 2</title>
+	</head>
+	
+	<body>
+		<h1>Assignment 3 Part 2</h1>
+	<script type="text/javascript">
+        // THE ROCK, PAPER, SCISSORS GAME
+        /*
+        var userChoice = prompt("Enter rock, paper or scissors");
+        if (userChoice != "rock" && userChoice != "paper" && userChoice != "scissors") {
+            alert("You did not enter rock, paper or scissors. Please click on 'OK' and enter one of them in all lowercase letters.");
+            userChoice = prompt("Enter rock, paper or scissors");
+        }
+        var computerChoice = Math.round(Math.random() * 2);
+        switch (computerChoice) {
+        case 1:
+            computerChoice = "rock";
+        case 2:
+            computerChoice = "scissors";
+        case 3:
+            computerChoice = "paper";
+        }
+        if (userChoice == "rock" && computerChoice == "scissors") {
+            alert("Congratulations, you win!");
+        } else if (userChoice == "rock" && computerChoice == "paper") {
+            alert("Sorry, the computer wins!");
+        } else if (userChoice == "scissors" && computerChoice == "rock") {
+            alert("Sorry, the computer wins!");
+        } else if (userChoice == "scissors" && computerChoice == "paper") {
+            alert("Congratulations, you win!");
+        } else if (userChoice == "paper" && computerChoice == "rock") {
+            alert("Congratulations, you win!");
+        } else if (userChoice == "paper" && computerChoice == "scissors") {
+            alert("Sorry, the computer wins!");
+        } else {
+            alert("It's a tie. Try again!");
+            var userChoice = prompt("Enter rock, paper or scissors");
+            if (userChoice != "rock" && userChoice != "paper" && userChoice != "scissors") {
+                alert("You did not enter rock, paper or scissors. Please click on 'OK' and enter one of them in all lowercase letters.");
+                userChoice = prompt("Enter rock, paper or scissors");
+            }
+            var computerChoice = Math.round(Math.random() * 2);
+            switch (computerChoice) {
+            case 1:
+                computerChoice = "rock";
+            case 2:
+                computerChoice = "scissors";
+            case 3:
+                computerChoice = "paper";
+            }
+            if (userChoice == "rock" && computerChoice == "scissors") {
+                alert("Congratulations, you win!");
+            } else if (userChoice == "rock" && computerChoice == "paper") {
+                alert("Sorry, the computer wins!");
+            } else if (userChoice == "scissors" && computerChoice == "rock") {
+                alert("Sorry, the computer wins!");
+            } else if (userChoice == "scissors" && computerChoice == "paper") {
+                alert("Congratulations, you win!");
+            } else if (userChoice == "paper" && computerChoice == "rock") {
+                alert("Congratulations, you win!");
+            } else if (userChoice == "paper" && computerChoice == "scissors") {
+                alert("Sorry, the computer wins!");
+            } else {
+                alert("It's a tie again! Refresh the page and then you can try again tomorrow.");
+            }
+        }
+        */
+        // END OF THE ROCK, PAPER, SCISSORS GAME
+        
+        // THE BASIC CALCULATOR
+        /*
+        var num1;
+        var num2;
+        var toPerform;
+        calculate(num1, num2, toPerform);
+        function calculate(num1, num2, toPerform) {
+            num1 = prompt("Enter a number");
+            num2 = prompt("Enter another number");
+            toPerform = prompt("What would you like to do with these numbers? Enter add, subtract, multiply or divide.");
+            var result;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            switch (toPerform) {
+            case "add":
+                result = num1 + num2;
+                alert(result);
+                break;
+            case "subtract":
+                result = num1 - num2;
+                alert(result);
+                break;
+            case "multiply":
+                result = num1 * num2;
+                alert(result);
+                break;
+            case "divide":
+                result = num1 / num2;
+                alert(result);
+                break;
+            default:
+                var typo = confirm("You did not enter add, subtract, multiply or divide. Click OK to start over.");
+                if (typo == true) {
+                    calculate(num1, num2, toPerform);
+                }
+            }
+        }
+        */
+        // END OF THE BASIC CALCULATOR
+    </script>	
+	</body>
+</html>
