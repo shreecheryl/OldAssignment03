@@ -73,43 +73,98 @@
         
         // THE BASIC CALCULATOR
         /*
-        var num1;
-        var num2;
-        var toPerform;
-        calculate(num1, num2, toPerform);
-        function calculate(num1, num2, toPerform) {
-            num1 = prompt("Enter a number");
-            num2 = prompt("Enter another number");
-            toPerform = prompt("What would you like to do with these numbers? Enter add, subtract, multiply or divide.");
+        function calculate(x, y, z) {
+            var x = prompt("Enter a number");
+            var y = prompt("Enter another number");
+            var z = prompt("What would you like to do with these numbers? Enter add, subtract, multiply or divide.");
             var result;
-            num1 = Number(num1);
-            num2 = Number(num2);
-            switch (toPerform) {
+            x = Number(x);
+            y = Number(y);
+            switch (z) {
             case "add":
-                result = num1 + num2;
+                result = x + y;
                 alert(result);
                 break;
             case "subtract":
-                result = num1 - num2;
+                result = x - y;
                 alert(result);
                 break;
             case "multiply":
-                result = num1 * num2;
+                result = x * y;
                 alert(result);
                 break;
             case "divide":
-                result = num1 / num2;
+                result = x / y;
                 alert(result);
                 break;
             default:
                 var typo = confirm("You did not enter add, subtract, multiply or divide. Click OK to start over.");
                 if (typo == true) {
-                    calculate(num1, num2, toPerform);
+                    calculate(num1, num2, toDo);
                 }
             }
         }
+        var num1;
+        var num2;
+        var toDo;
+        calculate(num1, num2, toDo);
         */
         // END OF THE BASIC CALCULATOR
+        
+        // DEATH BY JAVASCRIPT
+        // STEP 1
+        /*
+        function alphabetize(word) {
+            var letters = word.split("");
+            letters.sort();
+            return letters.join("");  
+        }
+        window.console.log(alphabetize("webmaster")); 
+        */
+        // STEP 2
+        /*
+        function firstUpper(allLower) {
+            var words = allLower.split(" ");
+            var newWords = [];
+
+            var i;
+            for (i = 0; i < words.length; i++) {
+                newWords.push(words[i].charAt(0).toUpperCase() + words[i].slice(1))
+            }
+            
+           return newWords.join(" ");
+        }
+        window.console.log(firstUpper("the quick brown fox"));
+        */
+        // STEP 3
+        /*
+        function vowels(sentence) {
+            sentence = sentence.toLowerCase();
+            var letters = sentence.split("");
+            var i;
+            var count = 0;
+            for (i = 0; i < letters.length; i++) {
+                if (letters[i] == "a" || letters[i] == "e" || letters[i] == "i" || letters[i] == "o" || letters[i] == "u") {
+                    count += 1;
+                }
+            }
+            return count;
+        }
+        window.console.log(vowels("The quick brown fox"));
+        */
+        // STEP 4
+        /*
+        function randomPassword(num) {
+            var chars = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOP1234567890";
+            var pass = "";
+            for (var x = 0; x < num; x++) {
+                var i = Math.floor(Math.random() * chars.length);
+                pass += chars.charAt(i);
+            }
+            return pass;
+        }
+        window.console.log(randomPassword(8));
+        */
     </script>	
 	</body>
 </html>
